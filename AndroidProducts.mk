@@ -6,9 +6,9 @@
 
 # inherit device config for Project Streak
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/streak_wayne.mk
+    $(LOCAL_DIR)/awaken_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    streak_wayne-eng \
-    streak_wayne-userdebug \
-    streak_wayne-user
+    awaken_wayne-eng \
+    awaken_wayne-userdebug \
+    awaken_wayne-user

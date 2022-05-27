@@ -9,7 +9,7 @@
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
 # Inherit Project Streak product configuration
-$(call inherit-product, vendor/streak/config/common_full_phone.mk)
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -25,11 +25,16 @@ BUILD_FINGERPRINT := "xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := streak_wayne
+PRODUCT_NAME := awaken_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Project Streak Official
-STREAK_BUILD_TYPE := OFFICIAL
+# GApps
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
+
+# Google Assistant
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
