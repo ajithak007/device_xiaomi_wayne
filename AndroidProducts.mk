@@ -6,9 +6,9 @@
 
 # inherit device config for Project Streak
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_wayne.mk
+    $(LOCAL_DIR)/xdroid_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_wayne-eng \
-    awaken_wayne-userdebug \
-    awaken_wayne-user
+    xdroid_wayne-eng \
+    xdroid_wayne-userdebug \
+    xdroid_wayne-user
